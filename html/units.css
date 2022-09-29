@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html - 16 pix by default */
+html {
+  font-size: 16px;
+}
+
+.ems li {
+    /* 1.3*16==20.8 */
+  font-size: 1.3em;
+}
+
+.rems li {
+  font-size: 1.3rem;
+  
+}
+
+.red p {
+    font-size: 2em;
+}
+
+.blue {
+    font-size: 3em;
+    background-color: crimson;
+    width: 2em;
+    height: 4em;
+}
+.parent{
+    background-color: cornflowerblue;
+    width: 25rem;
+}
+
+.para{
+    width: 75%;
+}
+
+.dynamic1{
+    background-color: gold;
+    width: 20em;
+    height: 20em;
+    
+    height: 50vh;
+    width: 50vw;
+
+}
+
+.dynamic2{
+background-color: crimson;
+width: 20em;
+height: 20em;
+
+height: 75vh;
+width: 75vh;
+
+
+}
+
+
+
+   </style>
+    
+
+
+</head>
+<body>
+    
+    <!-- ems amd rem code from  site -->
+    <!-- font size of child depends on there respective parents in em unit-->
+    <ul class="ems">
+        <li>One</li> 
+        <li>Two</li>
+        <li>Three
+          <ul>
+            <li>Three A</li>
+            <li>Three B
+              <ul>
+                <li>Three B 2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <!-- every child have same font size in rem unit  -->
+      <ul class="rems">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three
+          <ul>
+            <li>Three A</li>
+            <li>Three B
+              <ul>
+                <li>Three B 2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+      <div class="red">
+        
+            <p>One</p>
+            <p>Two</p>
+            <p>Three
+              <div>
+                <p>Three A</p>
+                <p>Three B
+                  <div>
+                    <p>Three B 2</p>
+                  </div>
+                </p>
+            </div>
+        </p>
+    </div>
+    
+
+
+<div class="blue">
+    hello how r u
+    
+
+</div>
+
+
+<!-- percentage -->
+
+<div class="parent">
+    <p class="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, temporibus? Vel, possimus optio. Voluptatem facilis laudantium odit aut, odio culpa dignissimos perspiciatis atque temporibus ea non amet tempora sapiente rerum?
+    </p>
+</div>
+
+
+<!-- view port width -->
+<div class="dynamic1">
+    hello
+</div>
+
+
+<div class="dynamic2">
+    hey
+</div>
+       
+
+    
+</body>
+</html>
